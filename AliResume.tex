@@ -1,4 +1,4 @@
-~\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5} % For icons
 \input{glyphtounicode}
 
 % Adjust margins
@@ -75,10 +76,11 @@
 % Header
 \begin{center}
     \textbf{\Huge \scshape Ali Nawaz} \\ \vspace{1pt}
-    \small +1 204-698-5838 $|$ \href{mailto:nawaza1@myumanitoba.ca}{\underline{nawaza1@myumanitoba.ca}} $|$ 
-    \href{https://www.linkedin.com/in/ali-nawaz-385a0b172/}{\underline{linkedin}} $|$
-    \href{https://github.com/Ali90922}{\underline{github}} $|$
-    \href{http://safarnamaaa.ca}{\underline{Safarnamaaa.ca}} 
+    \small 
+    \faIcon{phone} \href{tel:+12046985838}{+1 204-698-5838} $|$ 
+    \faIcon{envelope} \href{mailto:nawaza1@myumanitoba.ca}{nawaza1@myumanitoba.ca} $|$ 
+    \faIcon{linkedin} \href{https://www.linkedin.com/in/ali-nawaz-385a0b172/}{linkedin} $|$
+    \faIcon{github} \href{https://github.com/Ali90922}{github}
 \end{center}
 
 % Skills Section
@@ -110,7 +112,7 @@ Other skills: & Git, GitHub, CI/CD Pipelines, Docker, AI, NGINX/Apache \\
 \section{Open Source Development}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {Dune Dynasty Revamp \textbar{} C++, Modding \& Enhancement}{Aug 2024 -- Present}
+      {\href{https://github.com/Ali90922/Dune-Legacy-WestWood2}{Dune Dynasty Revamp \textbar{} C++, Modding \& Enhancement}}{Aug 2024 -- Present}
       {Independent Development}{}
       \resumeItemListStart
 
@@ -129,7 +131,7 @@ Other skills: & Git, GitHub, CI/CD Pipelines, Docker, AI, NGINX/Apache \\
 \section{Awards \& Achievements}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {G3 Hackathon Winner | DevHack's Hackathon}{March 2024}
+      {\href{https://github.com/Ali90922/G3-Hackathon}{G3 Hackathon Winner | DevHack's Hackathon}}{March 2024}
       {University of Manitoba}{}
       \resumeItemListStart
         \resumeItem{Achieved 1st place by tackling an industry-level challenge provided by G3 Canada.}
@@ -141,7 +143,7 @@ Other skills: & Git, GitHub, CI/CD Pipelines, Docker, AI, NGINX/Apache \\
 \section{Projects}
 \resumeSubHeadingListStart
     \resumeSubheading
-      {Safarnamaaa.ca | JavaScript, React, Bash}{Feb 2024 -- Present}
+      {\href{http://safarnamaaa.ca}{Safarnamaaa.ca | JavaScript, React, Bash}}{Feb 2024 -- Present}
       {In-house Distributed Website Hosting Model}{}
       \resumeItemListStart
         \resumeItem{Developed Safarnamaaa.ca, a dynamic website showcasing mountain climbing photography, utilizing distributed computing principles and React framework proficiency.}
@@ -156,20 +158,15 @@ Other skills: & Git, GitHub, CI/CD Pipelines, Docker, AI, NGINX/Apache \\
         \resumeItem{Developed and implemented an innovative chatbot algorithm that autonomously learns from website content to address client queries, resulting in valuable leads for the business owner by capturing key data points from interactions.}
       \resumeItemListEnd
 
-
       \vspace{-4pt} % Adjust the negative value as needed to move the section up
 
       \resumeSubheading
-      {In Memory Flat File System | }{October 2023 -- December 2023}
+      {\href{https://github.com/Ali90922/In-memory-flat-file-system}{In Memory Flat File System}}{October 2023 -- December 2023}
       {An efficient in-memory flash file system in C.}{}
       \resumeItemListStart
         \resumeItem{Engineered IMFFS, an efficient in-memory flash file system in C, implementing advanced file management capabilities including creation, loading, saving, deletion, renaming, directory management, and defragmentation, all optimized for performance within constrained memory environments.}
-
-
-
-
-
       
 \resumeSubHeadingListEnd
 
 \end{document}
+
