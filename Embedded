@@ -1,0 +1,172 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5} % For icons
+\input{glyphtounicode}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}] % Adjusted spacing
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt} % Adjusted spacing
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-4pt} % Adjusted spacing
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-4pt} % Adjusted spacing
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}} % Adjusted spacing
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}} % Adjusted spacing
+
+\begin{document}
+
+% Header
+\begin{center}
+    \textbf{\Huge \scshape Ali Nawaz} \\ \vspace{1pt}
+    \small 
+    \faIcon{phone} \href{tel:+12046985838}{+1 204-698-5838} $|$ 
+    \faIcon{envelope} \href{mailto:nawaza1@myumanitoba.ca}{nawaza1@myumanitoba.ca} $|$ 
+    \faIcon{Linkedin} \href{https://www.linkedin.com/in/ali-nawaz-385a0b172/}{Linkedin} $|$
+    \faIcon{Github} \href{https://github.com/Ali90922}{Github}
+\end{center}
+
+% Skills Section
+\section{Skills}
+
+\begin{tabularx}{\textwidth}{>{\bfseries}l X}
+Programming Languages: & Embedded C/C++ , Java, Kotlin, ARMv8-A Assembly Programming \\
+Embedded Systems: & Microcontroller Programming(Arduino, Rasperberry Pi, STM32) \\
+Cloud \& DevOps: & AWS (ECS, EC2, Lambda, S3), Azure, Kubernetes, Docker, CI/CD Pipelines \\
+Databases \& Servers: & MySQL, PostgreSQL, Kinesis Data Analytics, AWS Athena, Kafka \\
+Tools \& IDEs: & Git, GitHub, Visual Studio Code, IntelliJ IDEA, PyCharm, Eclipse \\
+\end{tabularx}
+
+% Adjust spacing between Skills and Education sections
+\vspace{-7pt}
+
+% Education Section
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Manitoba}{Winnipeg, Manitoba}
+      {Bachelor of Science in Computer Science}{Expected Graduation, May 2026}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework:} \textit{Analysis of Algorithms, Data Structures and Algorithms, Computer Systems, Discrete Math, Distributed Computing, Databases Concepts and Usage, Operating Systems, Artificial Intelligence }}
+        \resumeItem{\textbf{Certifications:} \textit{AWS Certified Cloud Practitioner}}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Open Source Development Section
+\section{Open Source Development}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://github.com/Ali90922/Dune-Legacy-WestWood2}{Dune Dynasty Revamp \textbar{} C++, Modding \& Enhancement}}{Aug 2024 -- Present}
+      {Independent Development}{}
+      \resumeItemListStart
+        \resumeItem{Dune Dynasty is an open-source project aimed at reviving the 1992 game Dune II by Westwood Studios; enhanced the project with gameplay improvements and modernization efforts.}
+        \resumeItem{Refactored legacy code to improve performance and maintainability on a personal branch.}
+        \resumeItem{Extended existing game mechanics without altering the core structure of Dune Legacy.}
+        \resumeItem{Created a Docker container that bundles dependencies and legacy .PAK files, enabling the game to run on modern systems without manual setup of outdated libraries.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Adjust spacing between sections
+\vspace{-8pt} % Reduced spacing between sections
+
+% Awards & Achievements Section
+\section{Awards \& Achievements}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://github.com/Ali90922/Distributed-Computing-TrangoTowers/tree/main/BlockChain\%20Miner\%20Trango}{Blockchain Mining Challenge}}
+
+      {Distributed Computing, University of Manitoba}{November 2024}
+      \resumeItemListStart
+        \resumeItem{Placed 6th out of 160 students in a blockchain mining challenge, showcasing strong proficiency in distributed ledger technologies and proof-of-work consensus}
+        \resumeItem{Optimized blockchain mining by implementing parallelized nonce-finding techniques, utilizing multiple machine cores to achieve a difficulty threshold of 8 leading zeros and enabling over 10,000 hash attempts per second with robust peer communication protocols}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {\href{https://github.com/Ali90922/G3-Hackathon}{G3 Hackathon Winner | DevHack's Hackathon}}{March 2024}
+      {University of Manitoba}{}
+      \resumeItemListStart
+        \resumeItem{Achieved 1st place by tackling an industry-level challenge provided by G3 Canada.}
+        \resumeItem{Developed a secure, real-time User Session and Location Monitoring Admin Dashboard using React.js, Firebase, and Node.js, demonstrating advanced problem-solving and technical skills.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Projects Section
+\section{Projects}
+\resumeSubHeadingListStart
+   
+    \resumeSubheading
+      {\href{http://52.183.47.158}{Cold Email Generator | LLM Models, ML, Python}}{October 2023 -- Present}
+      {Automate personalized cold emails with AI-driven precision.}{}
+      \resumeItemListStart
+        \resumeItem{Developed an AI-powered tool utilizing the LLAMA 3.1 LLM to automatically generate personalized cold emails from job links, streamlining outreach and enhancing job seekers' application efficiency.}
+        \resumeItem{Incorporated the Machine Learning lifecycle, utilizing Docker for containerization and AWS for cloud infrastructure, ensuring scalability and seamless performance.}
+      \resumeItemListEnd
+
+      \vspace{-2pt} % Adjust the negative value as needed to move the section up
+
+    \resumeSubheading
+      {\href{https://github.com/Ali90922/In-memory-flat-file-system}{In Memory Flat File System}}{October 2023 -- December 2023}
+      {An efficient in-memory flash file system in C.}{}
+      \resumeItemListStart
+        \resumeItem{Engineered an efficient in-memory flash file system in C (IMFFS) by implementing core functionalities—including creation, loading, saving, deletion, renaming, directory management, and defragmentation—using advanced low-level programming techniques like manual memory management and pointer manipulation, optimizing performance within constrained memory environments.}
+      
+\resumeSubHeadingListEnd
+
+\end{document}
